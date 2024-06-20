@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    font-family: 'monospace', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+.pantalla-top-cuadrado {
+    z-index: 1;
+    position: relative;
+    background-color: #ff2600;
+    border-radius: 8px 16px 16px 8px;
+    width: 100%;
+    height: 250px;
+    /*  */
+    .pantalla-top-circle {
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        left: -125px;
+        background-color: #ff2600;
+        border-radius: 100% 0 0 100%;
+        width: 200px;
+        height: 200px;
+        /*  */
+        .circle-top-in-1 {
+            position: absolute;
+            z-index: 2;
+            top: 35px;
+            left: 70px;
+            background-color: #0C0C0C;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+        }
+        .circle-top-in-2 {
+            position: absolute;
+            z-index: 2;
+            bottom: 35px;
+            left: 70px;
+            background-color: #0C0C0C;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+        }
+        .circle-top-in-3 {
+            position: absolute;
+            z-index: 2;
+            top: 85px;
+            left: 25px;
+            background-color: #0C0C0C;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+        }
+        .circle-top-in-4 {
+            position: absolute;
+            z-index: 2;
+            top: 85px;
+            right: 55px;
+            background-color: #0C0C0C;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    /*  */
+    .pantalla-top-cuadrado-in {
+        position: absolute;
+        z-index: 2;
+        top: 25px;
+        left: 30px;
+        background: #0C0C0C;
+        border-radius: 8px 16px 16px 8px;
+        width: 440px;
+        height: 200px;
+    }
+    /*  */
+    .pantalla-top-info {
+        position: absolute;
+        z-index: 3;
+        top: 12px;
+        left: 115px;
+        background: rgb(208, 255, 162);
+        border: 4px solid gray;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+        height: 225px;
+        /*  */
+        .info-pokedex {
+            position: absolute;
+            z-index: 4;
+            background-color: #ffcb69;
+            color: white;
+            padding: 2px;
+            width: 100%;
+        }
+        /*  */
+        .info-pokedex-pokemon {
+            position: absolute;
+            z-index: 4;
+            bottom: 0;
+            background-color: steelblue;
+            color: white;
+            padding: 6px;
+            width: 100%;
+        }
+        .img-pokemon {
+            position: absolute;
+            z-index: 4;
+            top: 25px;
+            background-color: white;
+            border-radius: 0 8px 8px 0;
+            overflow: hidden;
+            padding: 8px;
+            width: 120px;
+            height: 120px;
+            /*  */
+            img {
+                width: 100%;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.barra-middle {
+    position: relative;
+    z-index: 1;
+    background-color: #ff2600;
+    border-radius: 8px;
+    width: 100%;
+    height: 35px;
+    /*  */
+    .barra-middle-in {
+        position: absolute;
+        z-index: 2;
+        left: 47px;
+        background-color: #ff2600;
+        border-left: 3px solid #0C0C0C;
+        border-right: 3px solid #0C0C0C;
+        width: 400px;
+        height: 35px;
+        /*  */
+        .barra-middle-in-in {
+            position: absolute;
+            z-index: 3;
+            left: 195px;
+            background-color: #0C0C0C;
+            width: 10px;
+            height: 100%;
+        }
+    }
+}
+.pantalla-bottom-cuadrado {
+    z-index: 1;
+    position: relative;
+    background-color: #ff2600;
+    border-radius: 8px 16px 16px 8px;
+    width: 100%;
+    height: 250px;
+    /*  */
+    .pantalla-bottom-info {
+        position: absolute;
+        z-index: 3;
+        top: 12px;
+        left: 115px;
+        background: chartreuse;
+        border-radius: 8px;
+        width: 300px;
+        height: 225px;
+    }
+    /*  */
+    .pantalla-bottom-circle {
+        z-index: 2;
+        position: absolute;
+        left: -125px;
+        background-color: #0C0C0C;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+    }
+    /*  */
+    .pantalla-bottom-circle-two {
+        z-index: 2;
+        position: absolute;
+        top: 25px;
+        left: -100px;
+        background-color:#0C0C0C;
+        border: 3px solid #3f3f3f;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+    /*  */
+    .pantalla-bottom-circle-three {
+        z-index: 3;
+        position: absolute;
+        top: 50px;
+        left: -76px;
+        background-color: #3f3f3f;
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        /*  */
+        .bar-one{
+            z-index: 4;
+            top: 25px;
+            left: 58px;
+            position: absolute;
+            background-color: #a3a3a3;
+            border-radius: 8px;
+            width: 35px;
+            height: 100px;
+        }    
+        /*  */
+        .bar-two{
+            z-index: 4;
+            top: 25px;
+            left: 58px;
+            position: absolute;
+            background-color: #a3a3a3;
+            border-radius: 8px;
+            width: 35px;
+            height: 100px;
+            transform: rotate(90deg);
+        } 
+    }
+    /*  */
+    .pantalla-bottom-cuadrado-in {
+        z-index: 2;
+        position: absolute;
+        top: 25px;
+        background-color: #0C0C0C;
+        border-radius: 8px 16px 16px 8px;
+        width: 470px;
+        height: 200px;
+    }
+    /*  */
+    .btn-bottom-one {
+        position: absolute;
+        z-index: 3;
+        bottom: 35px;
+        right: 38.5px;
+        background-color: #a3a3a3;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    }
+    .btn-bottom-two {
+        position: absolute;
+        z-index: 3;
+        bottom: 90px;
+        right: 38.5px;
+        background-color: #a3a3a3;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    }
+}
+.fs-4 {
+    font-size: small;
+}
